@@ -3,12 +3,11 @@ also use the index.php for the the landing page.
 dont use the github for a registration type of application like this.
 it is not safe....
 also dont use a php code without a php identifier 
+
 <php> 
-
-<DOCTYPE html>
-example.....
-</html>
-
+   <DOCTYPE html>
+         example.....
+   </html>
 </php>
 
 ps...Jetro
