@@ -1,0 +1,305 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #050816;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #0b1025, #111b36);
+    border: 1px solid #243b65;
+    border-radius: 20px;
+    padding: 35px 50px;
+    box-shadow: 0 0 35px rgba(0, 174, 255, 0.12);
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #26395c;
+    padding-bottom: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #00d9ff;
+}
+
+nav p {
+    color: #00d9ff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* MAIN CONTENT */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 0;
+}
+
+/* EVENT INFORMATION */
+.event-info {
+    flex: 1;
+}
+
+.tag {
+    color: #00d9ff;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.event-info h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.event-info h1 span {
+    color: #00d9ff;
+    text-shadow: 0 0 20px #0077ff;
+}
+
+.description {
+    color: #a9b8d0;
+    line-height: 1.8;
+    max-width: 450px;
+    margin-top: 25px;
+}
+
+.event-details {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.event-details h3 {
+    color: #00d9ff;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    color: #c5d3e9;
+}
+
+/* REGISTRATION FORM */
+.form-box,
+.success-box {
+    width: 420px;
+    background: rgba(15, 28, 55, 0.9);
+    padding: 35px;
+    border: 1px solid #28517c;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.08);
+}
+
+.form-box h2 {
+    color: #00d9ff;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #9eacc3;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    color: #d7e6fa;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background: #080f21;
+    border: 1px solid #263e63;
+    border-radius: 7px;
+    padding: 12px;
+    color: white;
+    outline: none;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00d9ff;
+    box-shadow: 0 0 8px rgba(0, 217, 255, 0.2);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #66758d;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button,
+.success-box button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #007bff, #00d9ff);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover,
+.success-box button:hover {
+    box-shadow: 0 0 20px #00bfff;
+    transform: translateY(-2px);
+}
+
+.privacy {
+    color: #71829d;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* SUCCESS MESSAGE */
+.success-box {
+    display: none;
+    text-align: center;
+    margin: auto;
+    animation: fadeIn 0.7s ease;
+}
+
+.checkmark {
+    width: 75px;
+    height: 75px;
+    background: #00d9ff;
+    color: #071426;
+    font-size: 45px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+    box-shadow: 0 0 25px #00d9ff;
+}
+
+.success-box h1 {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.success-box h1 span {
+    color: #00d9ff;
+}
+
+.success-box p {
+    color: #a9b8d0;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.success-box h3 {
+    color: #00d9ff;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #26395c;
+    padding-top: 20px;
+    color: #71829d;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+    .content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .event-info h1 {
+        font-size: 48px;
+    }
+
+    .form-box,
+    .success-box {
+        width: 100%;
+    }
+
+    .container {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    nav p {
+        font-size: 9px;
+    }
+
+    .event-info h1 {
+        font-size: 40px;
+    }
+
+    .event-details {
+        gap: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
